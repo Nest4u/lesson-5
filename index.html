@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://auto.ria.com/">
+        <fieldset>
+            <legend>Find Car</legend>
+            <label for="type">Type:</label>
+            <br>
+            <select name="type" id="type" multiple required>
+                <option value="s">Sedan</option>
+                <option value="m">Micro</option>
+                <option value="Sc">Super car</option>
+                <option value="m">Minivan</option>
+                <option value="p">Pickup</option>
+                <option value="c">Coupe</option>
+                <option value="cab">Cabriolet</option>
+            </select>
+            <br>
+            <br>
+            <label for="cars" >Choose car model:</label>
+            <br>
+            
+            <select name="cars" id="cars" required multiple >  
+            <optgroup label="Japan">
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+            </optgroup>
+            <optgroup label="USA">
+                <option value="ford">Ford </option>
+            </optgroup>
+
+            <optgroup label="Germany">
+                <option value="bmw">BMW </option>
+            </optgroup>
+
+            <optgroup label="Sweden">
+                <option value="volvo">Volvo </option>
+                <option value="saab">Saab </option>
+            </optgroup>
+            </select>
+            <br>
+            <br>
+            <label for="rangep" >Price: form 5000$ to 50000$</label>
+            <input id="rangep" type="range" name="rangep" min="5000" max="50000" >
+            <br>
+            <br>
+            <label for="date">Date from:</label>
+            <input id="date" type="date" name="date" required >
+            <br>
+            <br>
+            <label for="date1">Date to:</label>
+            <input id="date1" type="date" name="date1" required >
+            <br>
+            <br>
+            <label for="color">Choose color:</label>
+            <input id="color" type="color" name="color" >
+            <br>
+            <br>
+            <fieldset style="margin-top: 5px;">
+                <legend>Transmission:</legend>
+                    <label for="auto">Automat</label>
+                    <input type="radio" name="group" value="auto" id="auto" required >
+                    <label for="mecanic">Mechanic</label>
+                    <input type="radio" name="group" value="mecanic" id="mecanic">
+            </fieldset>
+                    <br>
+                    <br>
+            <label for="type">Сondition:</label>
+            <br>
+            <select id="condition" name="condition" multiple required>
+                <option value="damaged">Damaged</option>
+                <option value="credit">Credit</option>
+                <option value="notCustomsCleared">Non-customs clearance</option>
+            </select>
+                <br>
+                <br>
+                <fieldset style="margin-top: 5px;">
+                    <legend>Fuel type:</legend> 
+                    <label for="disel">Disel</label>
+                    <input type="radio" name="groupft" value="disel" id="disel" required>
+                    <label for="petrol">Petrol</label>
+                    <input type="radio" name="groupft" value="petrol" id="petrol">
+                    <label for="electro">Electro</label>
+                    <input type="radio" name="groupft" value="electro" id="electro">
+                </fieldset>
+                <br>
+                <br> 
+                <fieldset style="margin-top: 5px;">
+                        <legend>Сonfiguration:</legend>
+                        <label for="basic">Basic</label>
+                        <input type="radio" name="groupc" value="basic" id="basic" required >
+                        <label for="comfort">Comfort</label>
+                        <input type="radio" name="groupc" value="comfort" id="comfort">
+                        <label for="comfortp">Comfort+</label>
+                        <input type="radio" name="groupc" value="comfortp" id="comfortp">
+                </fieldset>
+                        <br>
+                        <br>
+                        <button>Find</button>
+        </fieldset>   
+    </form>
+</body>
+</html>
